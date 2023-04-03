@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.accordionHeaderWrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  width: 100%;
+}
