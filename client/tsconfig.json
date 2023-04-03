@@ -1,21 +1,45 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "esnext",
     "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es6", "dom", "dom.iterable"]
+    "lib": [
+      "es6",
+      "dom",
+      "dom.iterable"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "ts-jest"
     },
-    "testMatch": ["<rootDir>/src/**/*.test.(ts|tsx)"],
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "testMatch": [
+      "<rootDir>/src/**/*.test.(ts|tsx)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
